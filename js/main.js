@@ -4,7 +4,12 @@ sideParButton.addEventListener('click', () => {
     sidePar.classList.toggle('view')
     sideParButton.classList.toggle('view')
 }) 
-
+const sr = ScrollReveal({
+    origin: 'left',
+    distance: '60px',
+    duration: '2500',
+    delay: 400,
+})
 const skillsProgress = document.querySelectorAll('.skills .skill .progress-bar span')
 const skillsSection = document.querySelector('.skills')
 const pictureSection = document.querySelector('.pictureSection')
@@ -73,12 +78,7 @@ allEducationBoxs.forEach((ele) => {
     })
 
 })
-const sr = ScrollReveal({
-    origin: 'left',
-    distance: '60px',
-    duration: '2500',
-    delay: 400,
-})
+
 sr.reveal('.landing  , .landingContent'  ,{origin: 'left'})
 sr.reveal('.up' , {origin: 'top', interval: 100})
 sr.reveal('.down' , {origin: 'bottom'})
