@@ -35,7 +35,9 @@ body {
     z-index: 10;
  
 }
-
+.f12 {
+    font-size: 12px;
+}
 .sideParImage {
     height: 200px;
 }
